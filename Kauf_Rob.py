@@ -23,7 +23,6 @@ def calc_pn(X,V,M,a,t):
     P=[1]*(V+1)
     P[0]=calc_p0(X)
     for i in range(1,V+1):
-
         P[i]=(P[0]*X[i])
     return P
 
@@ -31,7 +30,6 @@ def calc_bn(P,V,t,i):
     sum=0
     for n in range(V-t[i-1]+1,V+1):
         sum+=P[n]
-
     return sum
 
 def calc_all(V,t,a,M):
